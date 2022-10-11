@@ -1,0 +1,43 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block title %}Jinja{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Jinja</h1>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}You're at Jinja template 
+
+<p><h4>Variables</h4></p>
+<hr>
+
+<p>Name : {{ name }}</p>
+
+<p><h3>Subjects</h3></p>
+
+<ul>
+
+    {% for sub in subjects %}
+
+    <li>{{ sub }}</li>
+
+    {% endfor %}
+
+</ul>
+
+
+{% endblock %}
+
+
+
+
+
+
